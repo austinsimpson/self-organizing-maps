@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>data/winequality-red.csv</file>
+        <file>data/test_image.jpg</file>
+    </qresource>
+</RCC>
