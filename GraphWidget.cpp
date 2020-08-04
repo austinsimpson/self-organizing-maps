@@ -27,8 +27,7 @@
 #include <QMouseEvent>
 
 #include <cmath>
-
-#include <QDebug>
+#include <memory>
 
 
 constexpr auto kAxisTextMargins = 5.;

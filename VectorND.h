@@ -55,7 +55,6 @@ public:
 
     VectorND<n>& operator= (std::initializer_list<double> list)
 	{
-		Q_ASSERT (list.size() == n);
 #pragma omp parallel for
 		for (auto value : list)
 		{
@@ -68,7 +67,7 @@ public:
         return n;
     }
 
-    double operator[](int i) const
+	double operator[](unsigned long i) const
     {
         if (0 <= i && i < n)
         {
@@ -77,7 +76,7 @@ public:
         return 0.0;
     }
 
-    double& operator[](int i)
+	double& operator[](unsigned long i)
     {
         if (0 <= i && i < n)
         {

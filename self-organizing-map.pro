@@ -1,3 +1,4 @@
+CONFIG += c++17
 QT += core gui widgets
 
 SOURCES += main.cpp \
@@ -6,8 +7,7 @@ SOURCES += main.cpp \
     GraphWidget.cpp \
     PointSetModel.cpp \
     SOMCategoriesGraphLayer.cpp \
-    SelfOrganizingMapWindow.cpp \
-    VectorUtilities.cpp
+    SelfOrganizingMapWindow.cpp
 
 FORMS += \
     SelfOrganizingMapWindow.ui
@@ -24,8 +24,7 @@ HEADERS += \
     SelfOrganizingMapCategory.h \
     SelfOrganizingMapUnit.h \
     SelfOrganizingMapWindow.h \
-    VectorND.h \
-    VectorUtilities.h
+    VectorND.h
 
 RESOURCES += \
     Resources.qrc

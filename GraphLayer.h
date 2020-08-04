@@ -38,7 +38,7 @@ public:
 	GraphLayer(const FunctionModel& functionModel);
 	GraphLayer(IPointSetModel* pointModel);
 	GraphLayer(GraphLayer&& other);
-	~GraphLayer() = default;
+	virtual ~GraphLayer() = default;
 
 	void setPen(const QPen& pen);
 	const QPen& pen() const;
